@@ -4,7 +4,6 @@ import Header from './components/header.js';
 import Footer from './components/footer.js';
 import Home from './screens/home.js';
 import RecommendSearch from './screens/recommendSearch';
-import Rankings from './screens/rankings';
 import Search from './screens/search';
 import './App.scss';
 import Login from './screens/login.js';
@@ -19,7 +18,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/recommendsearch" element={<RecommendSearch />} />
-            <Route path="/rankings" element={<Rankings />} />
             <Route path="/search" element={<Search />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

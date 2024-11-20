@@ -1,0 +1,107 @@
+@import './_variables.scss';
+
+.search-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $secondary-color;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: $primary-color;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: $primary-color;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid $accent-color;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+            color: $primary-color;
+
+            &:focus {
+                outline: none;
+                border-color: $highlight-color;
+            }
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: $accent-color;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: $secondary-color;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $highlight-color;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .tracks-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 16px;
+
+        &:last-child {
+            justify-content: center;
+        }
+
+        .track-item {
+            display: flex;
+            align-items: center;
+            text-align: start;
+            padding: 10px;
+            border: 1px solid $accent-color;
+            border-radius: 8px;
+            background-color: $filler-color;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 4px;
+                margin-right: 10px;
+            }
+
+            div {
+                p {
+                    margin: 0;
+
+                    &:first-child {
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: $primary-color;
+                    }
+
+                    &:last-child {
+                        font-size: 14px;
+                        color: $primary-color;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
