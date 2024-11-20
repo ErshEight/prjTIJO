@@ -1,0 +1,36 @@
+@import '_variables';
+
+header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .nav-left {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 15px;
+            right: auto;
+        }
+    }
+
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $highlight-color;
+    }
+}

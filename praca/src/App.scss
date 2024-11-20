@@ -1,0 +1,16 @@
+@import 'styles/variables';
+
+@import 'styles/header';
+@import 'styles/footer';
+
+body {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+.App {
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+}
