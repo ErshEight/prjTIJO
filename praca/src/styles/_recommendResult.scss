@@ -1,0 +1,102 @@
+@import './_variables.scss';
+
+.recommend-result-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba($primary-color, 0.1);
+  color: $primary-color;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .recommend-result {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid $accent-color;
+    border-radius: 8px;
+    background-color: rgba($background-color, 0.8);
+    position: relative;
+
+    img {
+      width: 256px;
+      height: 256px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .recommend-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 20px;
+      flex-grow: 1;
+
+      h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: $primary-color;
+        margin: 0;
+      }
+
+      p {
+        font-size: 20px;
+        color: $primary-color;
+        margin: 0;
+        opacity: 0.8;
+      }
+    }
+
+    .return-button, 
+    .next-recommendation-button {
+      position: absolute;
+      right: 10px;
+      padding: 10px 20px;
+      background-color: $accent-color;
+      border: none;
+      border-radius: 5px;
+      color: $secondary-color;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $highlight-color;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .return-button {
+      bottom: 10px;
+    }
+
+    .next-recommendation-button {
+      bottom: 60px;
+    }
+
+    .spotify-embed {
+      position: absolute;
+      right: 10px;
+      padding: 10px 20px;
+      margin-bottom: 200px;
+      width: 300px;
+      height: 80px;
+      border-radius: 8px;
+      overflow: hidden;
+
+      iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 6px rgba($primary-color, 0.1);
+      }
+    }
+  }
+}

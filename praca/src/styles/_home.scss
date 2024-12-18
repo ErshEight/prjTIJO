@@ -1,0 +1,40 @@
+@import './_variables.scss';
+
+.home-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 200px;
+
+    .hello {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .call-to-action {
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 100px;
+    }
+
+    .start-button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        background-color: $accent-color;
+        color: $secondary-color;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($accent-color, 10%);
+        }
+    }
+}

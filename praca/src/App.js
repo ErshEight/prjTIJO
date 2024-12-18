@@ -8,6 +8,8 @@ import Search from './screens/search';
 import './App.scss';
 import Login from './screens/login.js';
 import Register from './screens/register.js';
+import RecommendResult from './screens/recommendResult.js';
+import './styles/_global.scss';
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
             <Route path="/search" element={<Search />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/recommendresult" element={<RecommendResult />} />
           </Routes>
         </main>
         <Footer />

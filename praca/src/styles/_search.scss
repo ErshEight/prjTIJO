@@ -3,16 +3,20 @@
 .search-container {
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 50px;
     padding: 20px;
-    background-color: $secondary-color;
+    background-color: rgba($background-color, 0.8);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba($primary-color, 0.1);
+    position: relative;
     color: $primary-color;
+    flex: 1;
 
     h1 {
         text-align: center;
         margin-bottom: 20px;
-        color: $primary-color;
+        color: $secondary-color;
+        font-size: 1.8rem;
     }
 
     form {
@@ -70,7 +74,7 @@
             padding: 10px;
             border: 1px solid $accent-color;
             border-radius: 8px;
-            background-color: $filler-color;
+            background-color: rgba($filler-color, 0.8);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
 
             &:hover {
