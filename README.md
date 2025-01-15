@@ -1,4 +1,27 @@
+# Nazwa kursu
+Testowanie i jakość oprogramowania
+
+# Autor
+Igor Tokarski
+
+# Temat projektu
+Testowanie aplikacji rekomendacji utworów muzycznych
+
+# Opis projektu
+
+
+
+# Uruchomienie projektu
+Z folderu "praca" -> npm start <br> <br>
+Z folderu "server" -> node index.js
+
 # Testy
+
+
+# Dokumentacja API
+
+
+# Przypadki testowe dla testera manualnego
 
 ## Test 1
 
@@ -107,3 +130,5 @@
 | **Warunki początkowe** | Użytkownik znajduje się na ekranie dowolnej rekomendacji utworu. |
 | **Kroki testowe**     | 1. Sprawdź, czy widoczne jest okno osadzonego odtwarzacza Spotify.<br>2. Naciśnij w odtwarzacz Spotify.<br>3. Sprawdź, czy utwór zaczyna grać. |
 | **Oczekiwany rezultat** | Odtwarzacz Spotify Embed działa poprawnie i odtwarza utwór. |
+
+# Technologie użyte w projekcie
