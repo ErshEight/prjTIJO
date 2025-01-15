@@ -17,11 +17,35 @@ Z folderu "server" -> node index.js
 
 # Testy
 
-[recommendResult.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendResult.test.js) <br>
-[recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js) <br>
-[search.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/search.test.js) <br>
+[recommendResult.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendResult.test.js) <br> <br>
+[recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js) <br> <br>
+[search.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/search.test.js) <br> <br>
 [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js) <br>
 
+### Testy integracyjne
+
+- Test metody wyświetlania komunikatu "Brak rekomendacji", jeśli brak jest dostępnych wyników. [recommendResult.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendResult.test.js)
+- Test metody handleSearch, czy zostaje wywołana po wysłaniu formularza. [recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js)
+- Test czy po pomyślnym wyszukaniu, aplikacja przechodzi do strony wyników rekomendacji [recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js)
+- Test metody handleSearch, czy nie zostaje wywołana, gdy input jest pusty. [recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js)
+- Test zablokowania przycisku wyszukiwania przy pustym polu tekstowym. [search.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/search.test.js)
+- Test rejestracji nowego użytkownika. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js)
+- Test wyświetlania komunikatu o błędzie przy nieudanej rejestracji. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js)
+- Test logowania użytkownika. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js)
+- Test wyświetlania odpowiedniego komunikatu błędu przy błędnym haśle. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js)
+- Test resetowania formularza rejestracji po błędzie. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js)
+
+### Testy jednostkowe
+- Test czy formularz wyszukiwania renderuje się poprawnie. [recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js)
+- Test czy wartość w polu tekstowym zmienia się po wprowadzeniu tekstu. [recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js)
+- Test czy po wysłaniu formularza z pustym polem wyświetlany jest odpowiedni komunikat błędu. [recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js)
+- Test czy input tekstowy istnieje na ekranie. [search.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/search.test.js)
+- Test czy przycisk wyszukiwania istnieje na ekranie. [search.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/search.test.js)
+- Test wyświetlania komunikatu "Nie znaleziono utworów", gdy nie znaleziono artystów. [search.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/search.test.js)
+- Test wyświetlania komunikatu błędu przy pustych polach logowania. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js)
+- Test czy rejestracja nie działa z pustymi polami. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js) 
+- Test czy pole hasła jest ukrywane podczas rejestracji. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js)
+- Test czy komunikat błędu znika po poprawnym wypełnieniu formularza logowania. [user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js)
 
 # Dokumentacja API
 
@@ -138,3 +162,9 @@ Z folderu "server" -> node index.js
 | **Oczekiwany rezultat** | Odtwarzacz Spotify Embed działa poprawnie i odtwarza utwór. |
 
 # Technologie użyte w projekcie
+
+- ReactJS
+- NodeJS
+- ExpressJS
+- MongoDB
+- Spotify Web API
