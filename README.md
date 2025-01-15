@@ -9,7 +9,7 @@ Testowanie aplikacji rekomendacji utworów muzycznych
 
 # Opis projektu
 
-
+Aplikacja rekomenduje użytkownikowi utwory oraz artystów muzycznych na podstawie wprowadzonych parametrów. Wyszukiwarka rekomendacji przedstawia rekomendacje opierając się o artystów wprowadzonych przez użytkownika w pole wyszukiwania. W rezultacie wyszukiwania istnieje możliwość odsłuchania utworu za pomocą osadzonego odtwarzacza muzyki Spotify. Dołączona jest również wyszukiwarka utworów, która wyszukuje dowolny utwór muzyczny po wpisaniu odpowiedniego tytułu.
 
 # Uruchomienie projektu
 Z folderu "praca" -> npm start <br> <br>
@@ -17,9 +17,15 @@ Z folderu "server" -> node index.js
 
 # Testy
 
+[recommendResult.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendResult.test.js) <br>
+[recommendSearch.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/recommendSearch.test.js) <br>
+[search.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/search.test.js) <br>
+[user.test.js](https://github.com/ErshEight/prjTIJO/blob/main/praca/src/tests/user.test.js) <br>
+
 
 # Dokumentacja API
 
+[swaggerhub]()
 
 # Przypadki testowe dla testera manualnego
 
