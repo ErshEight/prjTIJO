@@ -25,7 +25,7 @@ Z folderu "server" -> node index.js
 
 # Dokumentacja API
 
-[swaggerhub]()
+[swaggerhub](https://app.swaggerhub.com/apis-docs/placeholdername/dokumentacja-api_projektu_aplikacji_rekomendacji_muzycznych/1.0.0)
 
 # Przypadki testowe dla testera manualnego
 
