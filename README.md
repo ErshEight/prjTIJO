@@ -1,5 +1,5 @@
 # Nazwa kursu
-Testowanie i jakość oprogramowania
+Testowanie i Jakość Oprogramowania II
 
 # Autor
 Igor Tokarski
